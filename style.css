@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.player-1 {
+  border: 2px solid black;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.game .player-1 h3,
+.game .player-2 h3 {
+  text-transform: uppercase;
+  font-size: 3rem;
+  margin: 2rem 0;
+}
+.player-2 {
+  border-top: 2px solid black;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.new-game-section {
+  margin: 0 auto;
+  padding: 0.3rem 0;
+  text-align: center;
+  border-radius: 0.4rem;
+  position: relative;
+  z-index: -2;
+}
+.game .currentScore {
+  font-size: 5rem;
+  font-weight: bolder;
+}
+
+.game .score {
+  font-size: 4rem;
+  font-weight: bolder;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+}
+.container {
+  position: relative;
+  z-index: 10;
+  max-width: 900px;
+  background-color: rgb(102, 66, 36);
+
+  margin: 0 auto;
+}
+
+.game {
+  width: 100%;
+  height: 100%;
+  flex-basis: 100%;
+  color: white;
+  margin: 5rem;
+}
+
+.btns {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  margin: 1rem 0;
+}
+.btn {
+  background-color: rgba(255, 255, 255, 0);
+  border-radius: 1rem;
+  padding: 1rem;
+  border: 1px solid black;
+}
+.btn:hover {
+  background-color: rgb(255, 255, 255);
+  color: black;
+  transition: ease-in 0.2s;
+}
+
+.dice {
+  display: flex;
+  width: auto;
+  height: auto;
+  background-color: transparent;
+  color: black;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 1px black solid;
+  font-size: 5rem;
+}
+
+.new-game-section {
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.new-game-section a {
+  position: relative;
+  z-index: 5;
+  background-color: rgb(110, 53, 6);
+}
+
+.active {
+  background-color: rgb(110, 53, 6);
+}
+
+.win {
+  background-color: #206a5d;
+}
